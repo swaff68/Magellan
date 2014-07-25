@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= location
+	h2  Next Location: #{next}
+	
+	a(href='/next-location?dataId=#{nextItem}') Sail to Next Location! 
+	.div
+		a(href='/next-location?dataId=#{previousItem}') Sail to Previous Location!
